@@ -9,4 +9,4 @@
 class ProxyMiddleWare(object):
 
     def process_request(self, request, spider):
-        request.meta['proxy'] = 'http://117.143.109.173:80'
+        request.meta['proxy'] = 'http://111.23.10.123:8080'

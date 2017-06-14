@@ -23,3 +23,5 @@ class CnblogsItem(scrapy.Item):
     title = scrapy.Field()
     # 文章链接
     articleLink = scrapy.Field()
+    # 文章内容
+    content = scrapy.Field()

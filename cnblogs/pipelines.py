@@ -14,6 +14,7 @@ class CnblogsPipeline(object):
         client = pymongo.MongoClient(host='127.0.0.1', port=27017)
         dbName = client['cnblogs']
         self.table = dbName['articles']
+        self.table.create
 
     def process_item(self, item, spider):
         if isinstance(item, CnblogsItem):
